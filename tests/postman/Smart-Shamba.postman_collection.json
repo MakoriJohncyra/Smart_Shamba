@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "Smart Shamba API",
+    "_postman_id": "b8b4a9e1-5db5-4d7c-a11b-2f2c4c6e2026",
+    "description": "Starter collection for the Smart Shamba REST API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000/api"
+    }
+  ]
+}
